@@ -20,7 +20,7 @@ dropoff_longitude = st.number_input('dropoff longitude', value=40.6413111)
 dropoff_latitude = st.number_input('dropoff latitude', value=-73.7803331)
 passenger_count = st.number_input('passenger_count', min_value=1, max_value=8, step=1, value=1)
 
-if st.button('Sumbit'):
+if st.button('Submit'):
 
 
     # enter here the address of your flask api
@@ -40,4 +40,4 @@ if st.button('Sumbit'):
 
     pred = prediction['fare']
 
-    st.write(f'Fare will be {pred}')
+    st.write(f'Fare will be ${pred:.2f}')
