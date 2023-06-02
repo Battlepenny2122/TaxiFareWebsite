@@ -40,4 +40,4 @@ if st.button('Sumbit'):
 
     pred = prediction['fare']
 
-    pred
+    st.write(f'Fare will be {pred})
